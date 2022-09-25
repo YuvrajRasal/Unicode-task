@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2b50a877cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+      <nav>
+        <img src="/eduford_img/logo.png" alt="logo">
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/task  2/contactMe.html">HOME</a></li>
+                <li><a href="/task  2/contactMe.html">ABOUT</a></li>
+                <li><a href="/task  2/contactMe.html">COURSE</a></li>
+                <li><a href="/task  2/contactMe.html">BLOG</a></li>
+                <li><a href="/task  2/ContactMe5.html">CONTACT ME</a></li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Welcome To My website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo voluptates porro accusantium perferendis, vero saepe sequi commodi officia cupiditate, aperiam necessitatibus a perspiciatis facere accusamus architecto obcaecati consequuntur repellendus.</p>
+        <a href="/task  2/contactMe.html" class="hero-btn">click here to know more</a>
+      </div>
+    </section>
+    <!-- ---------------course-------------- -->
+<section class="course">
+    <h1>courses we would like to offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, iste?</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>intermediate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore deserunt eligendi iusto nostrum corporis optio libero blanditiis, incidunt culpa ab, sunt laboriosam doloribus sint architecto veritatis aliquid reprehenderit. Officiis?</p>
+        </div>
+        <div class="course-col">
+            <h3>degree</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore deserunt eligendi iusto nostrum corporis optio libero blanditiis, incidunt culpa ab, sunt laboriosam doloribus sint architecto veritatis aliquid reprehenderit. Officiis?</p>
+        </div>
+        <div class="course-col">
+            <h3>post grad</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore deserunt eligendi iusto nostrum corporis optio libero blanditiis, incidunt culpa ab, sunt laboriosam doloribus sint architecto veritatis aliquid reprehenderit. Officiis?</p>
+        </div>
+    </div>
+
+</section>
+<!-- ---------------campus-------------- -->
+<section class="campus">
+    <h1>our global campus</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="/eduford_img/london.png" alt="london">
+            <div class="layer">
+                <h3>london</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="/eduford_img/newyork.png" alt="neywork">
+            <div class="layer">
+                <h3>neywork</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="/eduford_img/washington.png
+            " alt="washington">
+            <div class="layer">
+                <h3>washington</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ----------java script for toggle menu---------- -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

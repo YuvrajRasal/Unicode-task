@@ -1,0 +1,224 @@
+*{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+<<<<<<< HEAD
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/eduford_img/banner.png) ;
+    width: 100%;
+    min-height: 100vh;
+=======
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/space.jpg) ;
+    width: 100%;
+    /* min-height: 100vh; */
+>>>>>>> 1066a8d2c3181304585e029aa700f53e82a30dc0
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+nav img{
+    width: 150px;
+}
+.nav-links ul li{
+    list-style: none ;
+    position: relative;
+    padding: 8px 12px;
+    display: inline-block;
+
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+} 
+.nav-links ul li::after{
+     content: '';
+     width: 0%;
+     background: rgb(247, 85, 26);
+     height: 2px;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    font-size: 18px;
+    margin: 10px 0 40px;
+}
+.hero-btn{
+    display: inline-block;
+    color: white;
+    padding: 15px 19px;
+    border-radius: 11px;
+    background: transparent;
+    border: 1px solid rgb(165, 165, 177);
+    text-decoration: none;
+  
+}
+.hero-btn:hover{
+    border: 1px solid rgba( 255, 83, 73,1);
+    /* background: linear-gradient(rgb(252, 47, 37,1),rgb(252, 47, 37,1);
+    transition: 2s; */
+    background: rgb(201, 51, 9);
+    transition: 0.5s;
+
+}
+ nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: orangered;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    /* change in program */
+    .nav-links ul li{
+        padding: 12px;
+    }
+
+}
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+.course p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: rgb(222, 222, 238);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.row h3{
+    text-align: center;
+    font-weight: 600px;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 30px rgba(165, 91, 182, 0.81);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .course-col{
+        margin: 14px;
+    }
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    padding-top:50px;
+    text-align: center;
+}
+.campus-col{
+flex-basis: 32%;
+border-radius: 10px;
+margin-bottom: 30px;
+position: relative;
+overflow: hidden;
+}
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    /* to put text written below in to image */
+    position: absolute;
+    top : 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba( 255, 0, 0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: yellow;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    transition: 1.5s;
+}

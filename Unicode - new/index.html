@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/task  2/home.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2b50a877cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+      <nav>
+        <!-- <img src="/eduford_img/logo.png" alt="logo"> -->
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/task  2/hobby.html">ABOUT</a></li>
+                <!-- <li><a href="/task  2/contactMe.html">ABOUT</a></li>
+                <li><a href="/task  2/contactMe.html">COURSE</a></li>
+                <li><a href="/task  2/contactMe.html">BLOG</a></li> -->
+                <li><a href="/task  2/ContactMe5.html">CONTACT ME</a></li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <!-- <div class="page1"> -->
+      
+      <div class="text-box">
+        <div class="profile-image">
+        <img src="/resume pic4.jpg" alt="yuvraj">   
+       </div>
+        <h1>Welcome To My website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo voluptates porro accusantium perferendis, vero saepe sequi commodi officia cupiditate, aperiam necessitatibus a perspiciatis facere accusamus architecto obcaecati consequuntur repellendus.</p>
+        <a href="/task  2/contactME5.html" class="hero-btn">click here to know more</a>
+      </div>  
+      <!-- </div> -->
+      
+    </section>
+
+    <!-- ----------java script for toggle menu---------- -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0"
+            navLinks.style.display = "block"
+
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+            navLinks.style.display = "none"
+        }
+    </script>
+</body>
+</html>

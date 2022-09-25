@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+
+
+}
+.conrainer{
+    text-align: center;
+}
+.text{
+    text-align: center;
+    padding: 20px 20px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(0 214 102 / 40%);
+}
+.table-head{
+    text-align: left;
+    /* font-size: 0.9rem; */
+    background-color:#009879;
+    color: white;
+    font-weight: bold;
+}
+.table th,
+.table td{
+    padding: 12px 15px;
+
+}
+.table tbody tr{
+    border-bottom: 1px solid rgb(222, 214, 214);
+
+}
+.table tbody tr:nth-child(even){
+    background-color: rgb(241, 237, 237);

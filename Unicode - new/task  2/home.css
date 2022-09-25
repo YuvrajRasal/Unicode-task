@@ -1,0 +1,162 @@
+*{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+<<<<<<< HEAD
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/eduford_img/banner.png) ;
+=======
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/space.jpg) ;
+>>>>>>> 1066a8d2c3181304585e029aa700f53e82a30dc0
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+nav img{
+    width: 150px;
+}
+.nav-links ul li{
+    list-style: none ;
+    position: relative;
+    padding: 8px 12px;
+    display: inline-block;
+
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+} 
+.nav-links ul li::after{
+     content: '';
+     width: 0%;
+     background: rgb(247, 85, 26);
+     height: 2px;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* ------------------new------------------ */
+.profile-image img{
+    /* width: 100%;
+    height: 100vh; */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: right;
+    
+}
+.page1{
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/* ------------------new------------------ */
+.text-box{
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    font-size: 18px;
+    margin: 10px 0 40px;
+}
+.hero-btn{
+    display: inline-block;
+    color: white;
+    padding: 15px 19px;
+    border-radius: 11px;
+    background: transparent;
+    border: 1px solid rgb(165, 165, 177);
+    text-decoration: none;
+  
+}
+.hero-btn:hover{
+    border: 1px solid rgba( 255, 83, 73,1);
+    /* background: linear-gradient(rgb(252, 47, 37,1),rgb(252, 47, 37,1);
+    transition: 2s; */
+    background: rgb(201, 51, 9);
+    transition: 0.5s;
+
+}
+ nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: orangered;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        /* position: absolute; */
+
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    /* change in program */
+    .nav-links ul li{
+        padding: 12px;
+    }
+
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .course-col{
+        margin: 14px;
+    }
+}
+/*  */
